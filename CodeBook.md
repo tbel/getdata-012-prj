@@ -1,6 +1,36 @@
 ## Code Book for Getting and Cleaning Data Course Project (getdata-012-prj)
 This describes the variables, the data, and any transformations and work performed
 
+## Feature Selection 
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+"step5dataset.txt" is a data set with the average of each variable for each activity and each subject.
+
+
 #### Step 1 is to read the data from files into memory
 
 ```R
