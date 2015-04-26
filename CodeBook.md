@@ -85,5 +85,7 @@ aggdata<-aggregate(data[,c(-1,-2)],
           by=list(subject=data$subject, activity=data$activity),
           mean)
 aggdata<-arrange(aggdata, subject, activity)
+all_comb<-expand.grid(subject=sort(unique(aggdata$subject)), activity=sort(unique(aggdata$activity)))
+aggdata <- merge(all_comb, aggdata, by=c("subject","activity"),all=TRUE)
 write.table(aggdata, file="step5dataset.txt", row.name=FALSE)
 ```
